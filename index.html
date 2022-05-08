@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <title>個人介紹頁</title>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="proflieCard">
+        <div class="logo1">
+          <img src="img/logo.jpg" alt="" class="logo2" />
+          <!-- <img src="img/logo.png" alt="" class="logo2" /> -->
+        </div>
+        <p class="name">冬眠</p>
+
+        <div class="slogan" id="slogan">
+          <p class="slogan2" id="slogan2">
+            風景再美，若沒人一起欣賞，也會有種莫名的憂傷
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button1" onclick="aboutMe()">關於我</button>
+          <button
+            class="button1"
+            onclick="window.open('https://dongmian-blog.vercel.app/')"
+          >
+            進入部落客
+          </button>
+          <button
+            class="button1"
+            onclick="window.open('https://stats.uptimerobot.com/xBVRgiLO36')"
+          >
+            服務器狀態
+          </button>
+        </div>
+
+        <footer class="footer">
+          <p class="footer2">
+            Openned in
+            <a target="_blank" href="https://github.com/woziji2200/ProfilePage"
+              >Github</a
+            >
+          </p>
+
+          <p class="footer2">
+            &copy2022 Dongmian &nbsp 素材来源
+            <a target="_blank" href="https://card.niconi.co.ni">PNGTREE</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <img src="img/7bg.png" class="lihui" id="lihui" alt="" />
+    <!-- <img src="img/7bg.png" class="lihui" alt="" /> -->
+    <div class="background" id="background"></div>
+    <div class="sakura" id="sakura"></div>
+    <div class="background2" id="background2"></div>
+
+    <script src="main.js"></script>
+    <script>
+      window.onload = load2D_bg();
+      window.onload = load2D_bg2();
+      window.onload = load2D_bg2_2();
+      window.onload = load2D_lihui();
+      window.onload = load2D_sakura();
+    </script>
+  </body>
+</html>
